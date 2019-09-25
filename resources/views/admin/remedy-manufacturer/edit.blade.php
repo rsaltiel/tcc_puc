@@ -34,13 +34,3 @@
         
     </form>
 @stop
-@section('js')
-    <script src="/vendor/masked_input/jquery.maskedinput.js"></script>
-    <script>    
-
-    jQuery("#cpf").mask("999.999.999-99");
-
-    jQuery("#address_postalcode").mask("99999-999");
-    
-    </script>
-@stop

@@ -141,13 +141,13 @@ return [
         'USUÁRIOS', 
         [
             'text' => 'Profissionais',
-            'url'  => 'user/my-courses',
+            'url'  => 'admin/user',
             // 'can'  => 'is-user',
             'icon' => 'graduation-cap',            
         ],
         [
             'text' => 'Pacientes',
-            'url'  => 'user/my-courses',
+            'url'  => 'admin/patient',
             // 'can'  => 'is-user',
             'icon' => 'graduation-cap',            
         ],  
@@ -181,17 +181,18 @@ return [
                     // 'can'  => 'is-admin',
                 ],                
                 [
-                    'text' => 'Fabricantes de medicamentos',
+                    'text' => 'Fabricantes',
                     'url'  => 'admin/remedy-manufacturer',
                     // 'can'  => 'is-admin',
-                ],
-                [
-                    'text' => 'Exames',
-                    'url'  => 'admin/exam',
-                    // 'can'  => 'is-admin',
-                ],               
+                ],                  
             ],
-        ],        
+        ], 
+        [
+            'text' => 'Exames',
+            'url'  => 'admin/exam',
+            'icon' => 'shopping-cart', 
+            // 'can'  => 'is-admin',
+        ],                    
         [
             'text' => 'Inscreva-se',
             'url'  => 'user/registration',
