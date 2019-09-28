@@ -65,8 +65,6 @@ class ExamController extends Controller
      */
     public function edit(Exam $exam)
     {
-         // Route Model Binding Implícito - Como o remedy é o mesmo nome do parâmetro da rota (para ver as rotas: php artisan route:list), não é necessário usar o findOrFail (abaixo) do ID. 
-        // $teacher = Teacher::findOrFail($id); // Se não existir o ID, vai falhar, retornando página 404
         return view('admin.exam.edit', compact('exam'));
     }
 
@@ -96,7 +94,6 @@ class ExamController extends Controller
     public function destroy($id)
     {
         $exam = Exam::findOrFail($id); // Se não existir o ID, vai falhar, retornando página 404
-
         $exam->active = 0; // Usa a lógica do fillable, delimitando os campos seguros. Desta forma, preenche apenas os campos pertinentes, atualizando os campos do modelo.
         $exam->save();
         return redirect()->route('exam.index');

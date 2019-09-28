@@ -24,9 +24,6 @@ class RemedyController extends Controller
         ->where('remedies.active', '=', 1)
         ->get(); 
         
-        // $remedies = Remedy::where('active', 1)->orderBy('generic_name', 'asc')
-        //     ->get();
-
         return view('admin.remedy.index', compact('remedies'));
     }
 
@@ -51,11 +48,11 @@ class RemedyController extends Controller
      */
     public function store(Request $request)
     {
-        //
         $this->_validate($request);
-        $data = $request->all();        
-        Remedy::create($data);
-        return redirect()->route('remedy.index');
+        $data = $request->all();     
+        $data["password"] = Hash::make($data["password"]);
+        User::create($data);
+        return redirect()->route('doctor.index');
     }
 
     /**

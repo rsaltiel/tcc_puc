@@ -23,6 +23,9 @@ Route::group([
     Route::resource('remedy', 'RemedyController');
     Route::resource('exam', 'ExamController');
     Route::resource('patient', 'PatientController');
+    Route::resource('speciality', 'SpecialityController');
+    Route::resource('attendant', 'AttendantController');
+    Route::resource('doctor', 'DoctorController');
     // Route::resource('payment-method', 'PaymentMethodController')->middleware('can:isAdmin,App\User');
     // Route::resource('profession', 'ProfessionController')->middleware('can:isAdmin,App\User');
     // Route::resource('knowledge-area', 'KnowledgeAreaController')->middleware('can:isAdmin,App\User');
@@ -44,6 +47,9 @@ Route::post('/admin/remedy-manufacturer/{id}/destroy', 'Admin\RemedyManufacturer
 Route::post('/admin/remedy/{id}/destroy', 'Admin\RemedyController@destroy');
 Route::post('/admin/exam/{id}/destroy', 'Admin\ExamController@destroy');
 Route::post('/admin/patient/{id}/destroy', 'Admin\PatientController@destroy');
+Route::post('/admin/speciality/{id}/destroy', 'Admin\SpecialityController@destroy');
+Route::post('/admin/attendant/{id}/destroy', 'Admin\AttendantController@destroy');
+Route::post('/admin/doctor/{id}/destroy', 'Admin\DoctorController@destroy');
 
 Auth::routes();
 

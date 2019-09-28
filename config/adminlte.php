@@ -141,9 +141,25 @@ return [
         'USUÁRIOS', 
         [
             'text' => 'Profissionais',
-            'url'  => 'admin/user',
             // 'can'  => 'is-user',
-            'icon' => 'graduation-cap',            
+            'icon' => 'graduation-cap',   
+            'submenu' => [
+                [
+                    'text' => 'Atendentes',
+                    'url'  => 'admin/attendant',
+                    // 'can'  => 'is-admin',
+                ],                
+                [
+                    'text' => 'Médicos',
+                    'url'  => 'admin/doctor',
+                    // 'can'  => 'is-admin',
+                ], 
+                [
+                    'text' => 'Médicos - Especialidades',
+                    'url'  => 'admin/speciality',
+                    // 'can'  => 'is-admin',
+                ],               
+            ],         
         ],
         [
             'text' => 'Pacientes',
