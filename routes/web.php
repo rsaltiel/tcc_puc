@@ -26,6 +26,7 @@ Route::group([
     Route::resource('speciality', 'SpecialityController');
     Route::resource('attendant', 'AttendantController');
     Route::resource('doctor', 'DoctorController');
+    Route::resource('consultation', 'ConsultationController');
     // Route::resource('payment-method', 'PaymentMethodController')->middleware('can:isAdmin,App\User');
     // Route::resource('profession', 'ProfessionController')->middleware('can:isAdmin,App\User');
     // Route::resource('knowledge-area', 'KnowledgeAreaController')->middleware('can:isAdmin,App\User');
@@ -50,6 +51,9 @@ Route::post('/admin/patient/{id}/destroy', 'Admin\PatientController@destroy');
 Route::post('/admin/speciality/{id}/destroy', 'Admin\SpecialityController@destroy');
 Route::post('/admin/attendant/{id}/destroy', 'Admin\AttendantController@destroy');
 Route::post('/admin/doctor/{id}/destroy', 'Admin\DoctorController@destroy');
+Route::post('/admin/consultation/{id}/destroy', 'Admin\ConsultationController@destroy');
+
+Route::post('/admin/view-consultation', 'Admin\ConsultationController@viewConsultation')->name('consultation.view-consultation');
 
 Auth::routes();
 

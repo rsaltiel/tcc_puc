@@ -169,18 +169,18 @@ return [
         ],  
         'CONSULTAS',
         [
-            'text'    => 'Profissionais',
+            'text'    => 'Consultas',
             'icon'    => 'graduation-cap',
             // 'can'  => 'is-admin',
             'submenu' => [
                 [
-                    'text' => 'Presenciais',
-                    'url'  => 'admin/view-course/2',
+                    'text' => 'Consultas agendadas',
+                    'url'  => 'admin/consultation',
                     // 'can'  => 'is-admin',
                 ],                
                 [
-                    'text' => 'A distância',
-                    'url'  => 'admin/view-course/1',
+                    'text' => 'Agendar',
+                    'url'  => 'admin/consultation/create',
                     // 'can'  => 'is-admin',
                 ],               
             ],
