@@ -3,9 +3,9 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Seja bem-vindo</h1>
 @stop
 
 @section('content')
-    <p>You are logged in!</p>
+    <p>Navegue pelo menu à esquerda para ter acesso às funcionalidades do sistema.</p>
 @stop

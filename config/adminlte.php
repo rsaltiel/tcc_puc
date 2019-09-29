@@ -209,129 +209,13 @@ return [
             'icon' => 'shopping-cart', 
             // 'can'  => 'is-admin',
         ],                    
-        [
-            'text' => 'Inscreva-se',
-            'url'  => 'user/registration',
-            // 'can'  => 'is-user',
-            'icon' => 'shopping-cart',            
-        ],       
-        [
-            'text' => 'Docentes',
-            'url'  => 'admin/teacher',
-            // 'can'  => 'is-admin',
-            'icon' => 'group',            
-        ],  
-        [
-            'text' => 'Inscrições',
-            'icon' => 'list-ol',
-            // 'can'  => 'is-admin',
-            'submenu' => [
-                [
-                    'text' => 'Inscrições presenciais',
-                    'url'  => 'admin/view-registration/2',
-                ],
-                [
-                    'text' => 'Inscrições a distância',
-                    'url'  => 'admin/view-registration/1',
-                ],                
-                [
-                    'text' => 'Configurações',
-                    'url'  => 'admin/registration/config',
-                ],
-            ],
-        ],
-        [
-            'text' => 'Financeiro',          
-            'icon' => 'dollar',
-            // 'can'  => 'is-admin',
-            'submenu' => [                
-                [
-                    'text' => 'Relatórios',
-                    'url'  => 'admin/financial-reports',
-                    'can'  => 'is-admin',
-                ],                
-                [
-                    'text' => 'Métodos de pagamento',
-                    'url'  => 'admin/payment-method',
-                    'can'  => 'is-admin',
-                ],
-                [
-                    'text' => 'Códigos de desconto',
-                    'url'  => 'admin/coupon',
-                    'can'  => 'is-admin',
-                ],
-            ],
-        ],
-        [
-            'text' => 'Bônus',
-            'url'  => 'admin/teachers',
-            'icon' => 'exchange',
-            'submenu' => [                
-                [
-                    'text' => 'Meus bônus',
-                    'url'  => 'user/my-bonus',
-                    'can'  => 'is-user',
-                ],   
-                [
-                    'text' => 'Tipos de bônus',
-                    'url'  => 'admin/bonus-type',
-                    'can'  => 'is-admin',
-                ],              
-            ],
-            
-        ],   
-        [
-            'text' => 'Relatórios',
-            'icon' => 'table',
-            // 'can'  => 'is-admin',
-            'submenu' => [    
-                [
-                    'text' => 'Como ficou sabendo',
-                    'url'  => 'admin/report/1',
-                    // 'can'  => 'is-admin',
-                ],      
-                     
-                [
-                    'text' => 'Formação',
-                    'url'  => 'admin/report/2',
-                    // 'can'  => 'is-admin',
-                ],   
-                [
-                    'text' => 'Área do conhecimento',
-                    'url'  => 'admin/report/3',
-                    // 'can'  => 'is-admin',
-                ],                  
-                [
-                    'text' => 'Parentesco',
-                    'url'  => 'admin/report/4',
-                    // 'can'  => 'is-admin',
-                ], 
-                [
-                    'text' => 'Cidades',
-                    'url'  => 'admin/report/5',
-                    // 'can'  => 'is-admin',
-                ],
-                [
-                    'text' => 'Localizar aluno',
-                    'url'  => 'admin/report/6',
-                    // 'can'  => 'is-admin',
-                ], 
-                /*
-                [
-                    'text' => 'Bônus',
-                    'url'  => 'admin/report/7',
-                    'can'  => 'is-admin',
-                ], 
-                */            
-            ],
-            
-        ],        
-        'PERFIL',
-        [
-            'text' => 'Meu perfil',
-            'url'  => "show-profile",
-            'icon' => 'lock',
-        ],
+           
+        // 'PERFIL',
+        // [
+        //     'text' => 'Meu perfil',
+        //     'url'  => "show-profile",
+        //     'icon' => 'lock',
+        // ],
     ],
 
     /*

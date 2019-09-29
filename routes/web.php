@@ -27,18 +27,7 @@ Route::group([
     Route::resource('attendant', 'AttendantController');
     Route::resource('doctor', 'DoctorController');
     Route::resource('consultation', 'ConsultationController');
-    // Route::resource('payment-method', 'PaymentMethodController')->middleware('can:isAdmin,App\User');
-    // Route::resource('profession', 'ProfessionController')->middleware('can:isAdmin,App\User');
-    // Route::resource('knowledge-area', 'KnowledgeAreaController')->middleware('can:isAdmin,App\User');
-    // Route::resource('course', 'CourseController')->middleware('can:isAdmin,App\User');
-    // Route::resource('coupon', 'CouponController')->middleware('can:isAdmin,App\User');
-    // Route::resource('bonus-type', 'BonusTypeController')->middleware('can:isAdmin,App\User');
-    // Route::get('view-registration/{id}', 'RegistrationController@viewRegistrations')->middleware('can:isAdmin,App\User');
-    // Route::post('/view-registration', 'RegistrationController@viewRegistrationsFiltered')->middleware('can:isAdmin,App\User');
-    // Route::get('financial-reports', 'FinancialController@viewFinancialReports')->middleware('can:isAdmin,App\User');  
-    // Route::post('financial-reports', 'FinancialController@viewFinancialReportsFiltered')->middleware('can:isAdmin,App\User');            
-    // Route::get('report/{id}', 'ReportController@index')->middleware('can:isAdmin,App\User');
-    // Route::post('report/filtered', 'ReportController@viewReportFiltered')->middleware('can:isAdmin,App\User');          
+   
 });  
 
 Auth::routes();

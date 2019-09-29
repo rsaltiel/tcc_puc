@@ -14,7 +14,7 @@
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
-            <p class="login-box-msg">{{ trans('adminlte::adminlte.login_message') }}</p>
+            <p class="login-box-msg">Preencha os dados abaixo para efetuar o seu login</p>
             <form action="{{ url(config('adminlte.login_url', 'login')) }}" method="post">
                 {{ csrf_field() }}
 
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group has-feedback {{ $errors->has('password') ? 'has-error' : '' }}">
                     <input type="password" name="password" class="form-control"
-                           placeholder="{{ trans('adminlte::adminlte.password') }}">
+                           placeholder="Senha">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     @if ($errors->has('password'))
                         <span class="help-block">
@@ -42,7 +42,7 @@
                     <div class="col-xs-8">
                         <div class="icheck-primary">
                             <input type="checkbox" name="remember" id="remember">
-                            <label for="remember">{{ trans('adminlte::adminlte.remember_me') }}</label>
+                            <label for="remember">Lembrar</label>
                         </div>
                     </div>
                     <!-- /.col -->
@@ -55,17 +55,17 @@
                 </div>
             </form>
             <br>
-            <p>
+            {{-- <p>
                 <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}" class="text-center">
                     {{ trans('adminlte::adminlte.i_forgot_my_password') }}
                 </a>
-            </p>
+            </p> --}}
             @if (config('adminlte.register_url', 'register'))
-                <p>
+                {{-- <p>
                     <a href="{{ url(config('adminlte.register_url', 'register')) }}" class="text-center">
                         {{ trans('adminlte::adminlte.register_a_new_membership') }}
                     </a>
-                </p>
+                </p> --}}
             @endif
         </div>
         <!-- /.login-box-body -->
